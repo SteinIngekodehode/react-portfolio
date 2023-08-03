@@ -12,12 +12,12 @@ const Tech = () => {
                 </h4>
                 <h1>Mine ferdigheter</h1>
             </Slide>
-            <Cards>
+            <div className="cards">
                 <Slide direction="left">
                     <Card>
                         Icon={}
                         title={"HTML"}
-                        disc={`Beskrivelse av ferdigheter`}
+                        discription={`Beskrivelse av ferdigheter`}
                     </Card>
                 </Slide>
 
@@ -25,7 +25,7 @@ const Tech = () => {
                     <Card>
                         Icon={}
                         title={"CSS"}
-                        disc={`Beskrivelse av ferdigheter`}
+                        discription={`Beskrivelse av ferdigheter`}
                     </Card>
                 </Slide>
 
@@ -33,7 +33,7 @@ const Tech = () => {
                     <Card>
                         Icon={}
                         title={"Javascript"}
-                        disc={`Beskrivelse av ferdigheter`}
+                        discription={`Beskrivelse av ferdigheter`}
                     </Card>
                 </Slide>
 
@@ -41,10 +41,10 @@ const Tech = () => {
                     <Card>
                         Icon={}
                         title={"React"}
-                        disc={`Beskrivelse av ferdigheter`}
+                        discription={`Beskrivelse av ferdigheter`}
                     </Card>
                 </Slide>
-            </Cards>
+            </div>
         </Container>
     );
 };

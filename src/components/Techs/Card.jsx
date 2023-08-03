@@ -1,19 +1,6 @@
 import styled from 'styled-components';
 import React from "react";
 /* eslint-disable react/prop-types */
-const Card = (props) => {
-    const { Icon, title, disc } = props;
-
-    return (
-        <Container>
-            <span className='icons'><Icon/></span>
-            <h2>{title}</h2>
-            <p>{disc}</p>
-        </Container>
-    )
-}
-
-export default Card;
 
 const Container = styled.div`
 width:100%
@@ -39,3 +26,23 @@ letter-spacing: 0,01;
 }
 
 `
+
+const Card = (props) => {
+    const { Icon, title, discription } = props;
+
+    return (
+        <Container>
+            <span className='icons'>
+                {
+                Icon ? <Icon/> : ""
+                }
+                
+            </span>
+            <h2>{title}</h2>
+            <p>{discription}</p>
+        </Container>
+    )
+}
+
+export default Card;
+
